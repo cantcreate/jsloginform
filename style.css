@@ -1,0 +1,19 @@
+body {
+    margin: 1cm;
+    padding: 1cm;
+    display: flex;
+    text-align: center;
+    background-color: darkgreen;
+    
+}
+.box {
+    background-color: wheat;
+    border: 2px solid brown;
+}
+.formhe {
+    margin: 0.2cm;
+}
+#phone number {
+    margin: 1cm;
+    padding-bottom: 1cm;
+}
