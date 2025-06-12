@@ -1,3 +1,43 @@
+function myfunction() {
+    const entry = {
+        name: document.getElementById("name").value,
+        middlename: document.getElementById("middlename").value,
+        lastname: document.getElementById("lastname").value,
+        email: document.getElementById("email").value,
+        address: document.getElementById("address").value,
+        phone: document.getElementById("phonenumber").value
+    };
+
+
+    const existingEntries = JSON.parse(localStorage.getItem("formEntries")) || [];
+    existingEntries.push(entry);
+    localStorage.setItem("formEntries", JSON.stringify(existingEntries));
+
+    addToTable(entry);
+
+    document.getElementById("formid").reset();
+}
+
+function firstload() {
+    const savedEntries = JSON.parse(localStorage.getItem("formEntries")) || [];
+    savedEntries.forEach(entry => addToTable(entry));
+}
+
+function addToTable(entry) {
+    const table = document.getElementById("insertvalue").getElementsByTagName("tbody")[0];
+    const row = table.insertRow();
+
+    row.insertCell(0).textContent = entry.name;
+    row.insertCell(1).textContent = entry.middlename;
+    row.insertCell(2).textContent = entry.lastname;
+    row.insertCell(3).textContent = entry.email;
+    row.insertCell(4).textContent = entry.address;
+    row.insertCell(5).textContent = entry.phone;
+}
+
+
+
+/*
 window.greetUser = function() {
       console.log("clicked");  // Should appear in console
       const name = document.getElementById("name").value;
@@ -24,7 +64,6 @@ window.greetUser = function() {
       }
     };
 
-/*
 
 
 let a = 32;
