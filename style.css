@@ -1,19 +1,95 @@
 body {
-    margin: 1cm;
-    padding: 1cm;
+    margin: 0px;
+    padding: 0px;
+    background-color: snow;
     display: flex;
+    justify-content: center;
+    color: #301F1E;
+}
+
+.box {
+    background-color: white;
+    padding: 30px 30px;
+    border-radius: 1px;
+    box-shadow: 10px 10px 10px #2A380B;
+    max-width: 600px;
+    width: 100%;
+
+}
+
+form h3 {
     text-align: center;
-    background-color: darkgreen;
+    margin-bottom: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    color: #01361C;
+}
+formhe {
+    margin-bottom: 30px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #01361C;
+    margin-top: 8px;
+    font-style: italic;
+    font-weight: 800px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#name, #middlename, #lastname, #email, #address, #phonenumber, #password {
+    width: 100%;
+    border-radius: 9px ;
+    border-color: #01361C;
+    padding: 9px;
+}
+button {
+    margin-left: 140px;
+    width: 50%;
+    border-radius: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000px;
+    font-style: italic;
+    font-size: large;
+    border-color: #01361C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #01361C;
+    cursor: pointer;   
+    transition: 0.3s ease; 
+}
+button:hover {
+    transform: scale(1.2);
+}
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    border: 1px solid #01361C;
+    overflow: hidden;
+    box-shadow: 1px 2px 2px #01361C;
     
 }
-.box {
-    background-color: wheat;
-    border: 2px solid brown;
+
+th, td {
+    padding: 10px 10px;
+    text-align: left;
+    border-right: 1px solid #01361C;
+    font-weight: 100px;
+    border-bottom: 1px solid #01361C;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #01361C;
+    transition: 0.2s ease;
 }
-.formhe {
-    margin: 0.2cm;
+tr:hover {
+    transform: scale(1.03);
 }
-#phone number {
-    margin: 1cm;
-    padding-bottom: 1cm;
+#insertvalue {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
 }
+
+
+
+
